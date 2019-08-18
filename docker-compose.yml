@@ -12,7 +12,9 @@ services:
     # depends_on:
     #   - postgres
     # environment:
-      # - DATABASE_URL
+      # - DATAvolumes:
+      # - .:/usr/app/
+      # - /usr/app/node_modulesBASE_URL
   # postgres:
   #   image: postgres:9.6.2-alpine
   #   environment:

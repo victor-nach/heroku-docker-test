@@ -12,3 +12,5 @@ RUN npm install --quiet
 
 # copy all the app's files from the project's root to our working directory
 COPY . .
+
+CMD ["npm", "start"]
