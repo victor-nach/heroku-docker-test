@@ -8,9 +8,9 @@ WORKDIR /usr/app
 WORKDIR /usr/app
 
 # install node modules (--quiet to specify)
-RUN npm install --quiet
+RUN npm install 
 
 # copy all the app's files from the project's root to our working directory
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]

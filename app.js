@@ -13,7 +13,8 @@ app.get("/", (req, res) => {
         status: 200,
         message: "welcome to this test setup",
         test: `Random environment variabble: ${process.env.NAME}`,
-        test2: `random environment variable: ${process.env.TYPE}`
+        test2: `random environment variable: ${process.env.TYPE}`,
+        postgres: `Database Url from env: ${process.env.DATABASE_URL}`
     });
 });
 
