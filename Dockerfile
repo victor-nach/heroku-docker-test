@@ -5,7 +5,7 @@ FROM node:10-alpine
 WORKDIR /usr/app
 
 # set the working directory to /usr/app for any subsequent ADD, COPY or RUN instructions
-WORKDIR /usr/app
+COPY package.json .
 
 # install node modules (--quiet to specify)
 RUN npm install 
