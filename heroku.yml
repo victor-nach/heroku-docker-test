@@ -8,4 +8,8 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: npm run start
+  web: 
+    command: npm run start
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
