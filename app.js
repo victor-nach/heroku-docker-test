@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
     console.log(``)
     res.status(200).json({
         status: 200,
-        message: "welcome to this test setup",
+        message: "welcome to this test setup, new test info",
         test: `Random environment variabble: ${process.env.NAME}`,
         test2: `random environment variable: ${process.env.TYPE}`,
         postgres: `Database Url from env: ${process.env.DATABASE_URL}`
