@@ -1,0 +1,30 @@
+{
+  "name": "heroku-docker-test",
+  "version": "1.0.0",
+  "description": "A test node/express/postgres app deployed to heroku to run a docker image",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-nach/heroku-docker-test.git"
+  },
+  "keywords": [
+    "heroku",
+    "docker",
+    "docker-compose",
+    "heroku.yml"
+  ],
+  "author": "Iheanacho Victor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victor-nach/heroku-docker-test/issues"
+  },
+  "homepage": "https://github.com/victor-nach/heroku-docker-test#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1"
+  }
+}
