@@ -1,0 +1,23 @@
+{
+    "name": "heroku-docker-test",
+    "scripts": {},
+    "env": {
+      "TYPE": {
+        "required": true
+      }
+    },
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [
+      "heroku-postgresql"
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "stack": "container"
+  }
